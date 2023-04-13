@@ -19,9 +19,24 @@ public class NameToHeight {
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-
-		// FIXME
-		throw new NotYetImplementedException();
+		//Map<String,​ String> height = new HashMap<>();
+		Map<String, String> h = new HashMap<>();
+		
+		String character = "y";
+		String name = "";
+		String height_1 = "";
+		while (character.equals("y")){
+			System.out.println("Enter your name: ");
+			name = in.next();
+			System.out.println("Enter your height in feet: ");
+			height_1 = in.next();
+			
+			h.put(name, height_1);
+			
+			System.out.println("Press y to continue: ");
+			character = in.next();
+		}
+		System.out.println(h);
 
 	}
 }
